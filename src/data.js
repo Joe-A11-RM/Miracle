@@ -1,0 +1,686 @@
+let data = [
+  {
+    id: 0,
+    name: "Abdominal belt",
+    description:
+      "Gives support to lower back and eliminates excess water weight, Can be worn under clothing, Inside is a pure Egyptian cotton and outside is a pure Wool",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0014",
+    Coverimage: "Abdominal",
+    images: [],
+    category: "abdominal",
+    type: "",
+  },
+  {
+    id: 1,
+    name: "Verbal belt",
+    description:
+      "Reinforced by suitable metal or semirigid strips incorporated posteriorly on each side of sprinous processes to provid wide stablearea posteriorly.",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0011",
+    Coverimage: "Verbal",
+    images: [],
+    category: "abdominal",
+    type: "",
+  },
+  {
+    id: 2,
+    name: "Surgical binder",
+    description:
+      "Hardwearing elasticated fabric long term use , Adjustable Velcro fasteners for quick, secure fitting, Postoperative support , Lumber arthroses , Vertebral and abdominal support",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0012",
+    Coverimage: "Surgical",
+    images: [],
+    category: "abdominal",
+    type: "",
+  },
+  {
+    id: 3,
+    name: "Maternity binder",
+    description:
+      "Helps with proper posture , and relieves stress to the body by encouraging proper body position and movments",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0010",
+    Coverimage: "Maternity",
+    images: [],
+    category: "abdominal",
+    type: "",
+  },
+  {
+    id: 4,
+    name: "Vertebral binder",
+    description:
+      "Gives support to lower back, eliminates excess water weight, Can be worn under clothing",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0013",
+    Coverimage: "Vertebral",
+    images: [],
+    category: "abdominal",
+    type: "daily",
+  },
+  {
+    id: 5,
+    name: "Rib belt ( Men - Women )",
+    description:
+      "Provides for even distribution of pressure Hook and pile closure simplifies application",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0015",
+    Coverimage: "Rib",
+    images: [],
+    category: "abdominal",
+    type: "",
+  },
+  {
+    id: 6,
+    name: "Crisscross knee support",
+    description:
+      "Dart-structured elastic, Crisscross on the back, Rubberizing on seams, Non-roll edges.",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0023",
+    Coverimage: "Crisscross",
+    images: [],
+    category: "knee",
+    type: "",
+  },
+  {
+    id: 7,
+    name: "Open Knee Brance",
+    description:
+      "The front open design offers better fit, For arthritic knee conditions, minor sprains and strains, Provides firm support for the maintenance of joint structures with gentle compression over the kneecap, Increases healing and keeps joints and muscles flexible",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0020",
+    Coverimage: "Openknee",
+    images: [],
+    category: "knee",
+    type: "",
+  },
+  {
+    id: 8,
+    name: "Panel knee Immobilizer",
+    description:
+      "Designed for Customeizing to each patient, Removable side panels can re-locate to fit all, Straps with looop lock closures",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0024",
+    Coverimage: "PanelKnee",
+    images: [],
+    category: "knee",
+    type: "",
+  },
+  {
+    id: 9,
+    name: "Knee support",
+    description:
+      "The miracle knee support is suitable for all sporting activities and everyday use by men and women, Elasticized cotton construction ensures comfort , flexibility, and durability",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0021",
+    Coverimage: "SupportKnee",
+    images: [],
+    category: "knee",
+    type: "",
+  },
+  {
+    id: 10,
+    name: "Open knee support",
+    description: "Open patella relieves pressure on the patella",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0022",
+    Coverimage: "OpenKneeSupport",
+    images: [],
+    category: "knee",
+    type: "",
+  },
+  {
+    id: 11,
+    name: "Spiral knee support",
+    description:
+      "Four medial and lateral metal stays provide additional support and stability for the knee, Retains heat to relieve pain, Increases healing and keeps joints and muscles flexible",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0025",
+    Coverimage: "SpiralKneeSupport",
+    images: [],
+    category: "knee",
+    type: "",
+  },
+  {
+    id: 12,
+    name: "Ankle brace",
+    description:
+      "Dual tension elastic, Flat seams, Spiral Design, Non-roll edges",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0033",
+    Coverimage: "Anklebrace",
+    images: [],
+    category: "ankle",
+    type: "daily",
+  },
+  {
+    id: 13,
+    name: "Ankle support",
+    description:
+      "Helps to relieve pain due to strains or stiff, Minimizes changes of future injuries, Adjustable hook & loop closure ensures comfortable fit and support",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0033 (B)",
+    Coverimage: "Anklesupport",
+    images: [],
+    category: "ankle",
+    type: "",
+  },
+  {
+    id: 14,
+    name: "Open Ankle support",
+    description:
+      "Medically approved and comfortable to wear, it is effective whether the condition is new or recurring, Elasticated cotton construction ensures comfort, flexibility, and durability.",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0031",
+    Coverimage: "OpenAnklesupport",
+    images: [],
+    category: "ankle",
+    type: "",
+  },
+  {
+    id: 15,
+    name: "Ankle support",
+    description:
+      "Medically approved and comfortable to wear, it is effective whether the condition is new or recurring, Elasticated cotton construction ensures comfort, flexibility, and durability.",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0030",
+    Coverimage: "OpenAnklesupport",
+    images: [],
+    category: "ankle",
+    type: "",
+  },
+  {
+    id: 16,
+    name: "Ankle wrap",
+    description:
+      "Provide durable and comfortable support to the ankle joint for athletes and to relieve the paint of the ankle joint in sprains & strains",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0035",
+    Coverimage: "AnkleWrap",
+    images: [],
+    category: "ankle",
+    type: "",
+  },
+  {
+    id: 17,
+    name: "Elastic Ankle Brace",
+    description:
+      "Used for all pains around the ankles, looseness around the ankles",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0030",
+    Coverimage: "ElasticAnkle",
+    images: [],
+    category: "ankle",
+    type: "",
+  },
+
+  {
+    id: 18,
+    name: "Shin support",
+    description:
+      "Designed to fit the upper portion of the tibia and calf Provides, compression and support over the calf and shin, Retains body heat to worm shin and increase blood circulation",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0032",
+    Coverimage: "ElasticAnkle",
+    images: [],
+    category: "thigh&shin",
+    type: "",
+  },
+  {
+    id: 19,
+    name: "Thigh support",
+    description:
+      "Helps to avoid the misery and frustration resulting from an injured or weak thigh, Retains heat to relieve pain",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0026",
+    Coverimage: "ThighSupport",
+    images: [],
+    category: "thigh&shin",
+    type: "",
+  },
+  {
+    id: 20,
+    name: "Elastic Bandage",
+    description: "Avaliable in 5 size, 100% pure Egyptian cotton",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0036",
+    Coverimage: "ElasticBandage",
+    images: [],
+    category: "thigh&shin",
+    type: "daily",
+  },
+  {
+    id: 21,
+    name: "Long Surgical Elastic Stockings",
+    description:
+      "Contitions arising from constitional or post-thrombotic venous insufficiency, Strong tendency to oedema, Secondary varicosis, White atrophy, Dermatosclerosis, Following treatment for severe ulcers, if they have caused relapse",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0034",
+    Coverimage: "LongStockings",
+    images: [],
+    category: "stocking",
+    type: "",
+  },
+  {
+    id: 22,
+    name: "Short Surgical Elastic Stockings",
+    description: "",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0034(B)",
+    Coverimage: "ShortStockings",
+    images: [],
+    category: "stocking",
+    type: "",
+  },
+
+  {
+    id: 23,
+    name: "Wrist Brace",
+    description:
+      "Adjustable fastening allows variable degrees of support. Preshaped suitable metal splint knee the hand at an angular position to the wrist recommended for proper healing",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0041",
+    Coverimage: "WristBrace",
+    images: [],
+    category: "wrist",
+    type: "",
+  },
+
+  {
+    id: 24,
+    name: "Wrist Sport (closed)",
+    description:
+      "Helps to avoid the misery and frustration resulting from an injured or weak wrist,  Provides firm support for the maintenance of joint structures with gentle compression over the wrist, Retains heat to relieve pain",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0044(B)",
+    Coverimage: "WristSport",
+    images: [],
+    category: "wrist",
+    type: "daily",
+  },
+
+  {
+    id: 25,
+    name: "Wrist/Thumb Support",
+    description:
+      "Stabilization of thumb by reinforced metal  stick, Adjustable hook and loop fasteners insure comfortable fit and stabilization during activites",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0045",
+    Coverimage: "WristThumbSupport",
+    images: [],
+    category: "wrist",
+    type: "",
+  },
+
+  {
+    id: 26,
+    name: "Wrist Support",
+    description:
+      "3'(7.6cm) flannel lined elastic strap. Wrap-around style contact closure",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0044",
+    Coverimage: "WristSupport",
+    images: [],
+    category: "wrist",
+    type: "",
+  },
+  {
+    id: 27,
+    name: "Wrist Wrap",
+    description:
+      "Helps to relieve pain through pressure of injured wrists, Provides firm support around weakened and strained area, Universal size for easy fit.",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0046",
+    Coverimage: "WristWrap",
+    images: [],
+    category: "wrist",
+    type: "daily",
+  },
+  {
+    id: 28,
+    name: "Elbow Support",
+    description:
+      "Provides heat, support and compression to the elbow joint and area, without restricting flexbility, Porous Weave in soft cotton",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0043",
+    Coverimage: "ElbowSupport",
+    images: [],
+    category: "elbow",
+    type: "daily",
+  },
+  {
+    id: 29,
+    name: "Tennis Elbow",
+    description:
+      "Extra circle pressure point offers extra pressure on the muscle in the arm of wrist, Adjustable hook and loop strap allows you to apply greater tension if needed, Relieves pain resulting from strained muscles in the foream during play",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0040",
+    Coverimage: "TennisElbow",
+    images: [],
+    category: "elbow",
+    type: "",
+  },
+  {
+    id: 30,
+    name: "Suspensory",
+    description:
+      "Reinforced pouch for support & comfort, Used in all sports, Post operative testicular operations",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0046",
+    Coverimage: "Suspensory",
+    images: [],
+    category: "elbow",
+    type: "fresh",
+  },
+
+  {
+    id: 31,
+    name: "Arm Sling",
+    description:
+      " A new designed arm-sling  for fractured arm, to avoid pressure on the neck and the cervical vertebra  and relaxes the wrist",
+    sizes: "65-80-90-100-110 cm",
+    code: "0061",
+    Coverimage: "ArmSling",
+    images: [],
+    category: "arm",
+    type: "",
+  },
+
+  {
+    id: 32,
+    name: "Comfort Arm Sling",
+    description:
+      "Economy style. Attractive blue envelope with buckle closure, Support the arm and carries the weight across the back and shoulder",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0062",
+    Coverimage: "ArmSling",
+    images: [],
+    category: "arm",
+    type: "",
+  },
+
+  {
+    id: 33,
+    name: "Universal Sling",
+    description:
+      "Soft foam in a stockinette tube provides strong and comfort support, Designed to support he foream and shoulder, Supplied in roll can be cut for each patient with the exact required length",
+    sizes: "5 cm width one roll",
+    code: "0060",
+    Coverimage: "UniversalSling",
+    images: [],
+    category: "arm",
+    type: "",
+  },
+
+  {
+    id: 34,
+    name: "Hernia Belts Double",
+    description:
+      "Are made of the highest grade of cotton elastic, with tow contoured sponge pads inserted, for a firm and perfect support. Front contact closure but extension straps are available can be comfortable worm under clothing.",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0045",
+    Coverimage: "HerniaBelts",
+    images: [],
+    category: "herniabelts",
+    type: "fresh",
+  },
+
+  {
+    id: 35,
+    name: "Hernia Belts Single (left - right)",
+    description:
+      "Are made of the highest grade of cotton elastic, with tow contoured sponge pads inserted, for a firm and perfect support. Front contact closure but extension straps are available can be comfortable worm under clothing.",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0050",
+    Coverimage: "HerniaBeltsSingle",
+    images: [],
+    category: "herniabelts",
+    type: "",
+  },
+
+  {
+    id: 36,
+    name: "Umbilical Belt",
+    description:
+      "Contact closure 22 cm width abdominal belt closed 22 cm width",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0050",
+    Coverimage: "UmbilicalBelts",
+    images: [],
+    category: "herniabelts",
+    type: "fresh",
+  },
+
+  {
+    id: 37,
+    name: "Infantile Umbilical Belt",
+    description:
+      "Baby band made of 2' (5cm) flannel lined elastic, Soft spong pad with cotton fabric cover avoids harm to baby skin. Contact closure",
+    sizes: "One size Multi color",
+    code: "0052",
+    Coverimage: "UmbilicalBelts",
+    images: [],
+    category: "children",
+    type: "",
+  },
+
+  {
+    id: 38,
+    name: "Mero Cooling Sheet",
+    description:
+      "For Childern & Adults Suffering From High Temperature, For Adults Suffering From Severe Headaches And Migraines, For Childern And Adults Sufering From Toothache, Cooling Effect That Lasts Up To 8 Hours",
+    sizes: "",
+    code: "0085",
+    Coverimage: "MeroCooling",
+    images: [],
+    category: "children",
+    type: "",
+  },
+
+  {
+    id: 39,
+    name: "Frejka",
+    description:
+      "A new designed hip abduction splint for C.D.H. manufactured from materials and lined with a layer of sponge. Which is more comfortable to children available in six sizes, and in a variety of colors",
+    sizes: "S-M-L-XL-XXL-3XL",
+    code: "0051",
+    Coverimage: "Frejka",
+    images: [],
+    category: "children",
+    type: "daily",
+  },
+
+  {
+    id: 40,
+    name: "Shoulder support",
+    description:
+      "A new designed hip abduction splint for C.D.H. manufactured from materials and lined with a layer of sponge. Which is more comfortable to children available in six sizes, and in a variety of colors",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0056",
+    Coverimage: "ShoulderSupport",
+    images: [],
+    category: "shoulder",
+    type: "daily",
+  },
+  {
+    id: 41,
+    name: "Double Shoulder With Belt",
+    description:
+      "Prevent shoulder subluxation and hold the head of humerus in the glenoid cavity, Provides support and  therapeutic warmth to the shoulder and upper arm, Allows the athlete or patient to gradually return to full range of motion",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0057",
+    Coverimage: "DoubleShoulderBelt",
+    images: [],
+    category: "shoulder",
+    type: "",
+  },
+  {
+    id: 42,
+    name: "Double Shoulder",
+    description:
+      "Provides therapeutic heat and improves blood circulation, Comfortable to wear under clothing",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0057",
+    Coverimage: "DoubleShoulder",
+    images: [],
+    category: "shoulder",
+    type: "fresh",
+  },
+
+  {
+    id: 43,
+    name: "Posture Aid",
+    description:
+      "Excellent aid in correcting poor posture and shoulder slump, Adjustable hook and pile closure facilitates proper fit",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0064 (B)",
+    Coverimage: "PostureAid",
+    images: [],
+    category: "back",
+    type: "daily",
+  },
+
+  {
+    id: 44,
+    name: "Clavicle Strap",
+    description:
+      "Triangular configuration correctly distributes pressure to tip of shoulder, Suitable for adults or children, Adjustable hook and pile closure facilitates proper fit",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0064 (C)",
+    Coverimage: "ClavicleStrap",
+    images: [],
+    category: "back",
+    type: "",
+  },
+
+  {
+    id: 45,
+    name: "Clavicle Brace",
+    description:
+      "Features tubular stockinet padded with foam, Provides support to help immobilize shoulder and arm, Design is adaptable to male or female and for either arm",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0064",
+    Coverimage: "ClavicleBrace",
+    images: [],
+    category: "back",
+    type: "fresh",
+  },
+
+  {
+    id: 46,
+    name: "Hard Collar",
+    description:
+      "Low-density PE sheet edged with round foam covered by vinyl straps. 2 peaces structure for exact fit and easy adjustment. Ventilated holes. Contact closure",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0072",
+    Coverimage: "HardCollar",
+    images: [],
+    category: "neck",
+    type: "",
+  },
+
+  {
+    id: 47,
+    name: "Hard Collar With Chin",
+    description:
+      " Low-density PE sheet edged with round foam covered by vinyl straps. 2 peaces structure for exact fit and easy adjustment. Ventilated holes. Contact closure",
+    sizes: "XS-S-M-L-XL-XXL-3XL",
+    code: "0074",
+    Coverimage: "HardCollarChin",
+    images: [],
+    category: "neck",
+    type: "",
+  },
+
+  {
+    id: 48,
+    name: "Soft Collar",
+    description:
+      "Firm of medium foam covered with tubular knit cotton fabric contact closure",
+    sizes: "",
+    code: "",
+    Coverimage: "SoftCollar",
+    images: [],
+    category: "neck",
+    type: "daily",
+  },
+
+  {
+    id: 49,
+    name: "Cast Chose",
+    description:
+      "Open toe / heal sandal with E.V.A. rocker sole, Canvas upper with contact closure, Washable",
+    sizes: "XS- S- M- L- XL-XXL- 3XL",
+    code: "0063",
+    Coverimage: "CastChose",
+    images: [],
+    category: "others",
+    type: "fresh",
+  },
+
+  {
+    id: 50,
+    name: "Health sole Heel ups",
+    description: "High quality",
+    sizes: "XS- S- M- L- XL-XXL- 3XL",
+    code: "0065 - 0066",
+    Coverimage: "HealthSole",
+    images: [],
+    category: "others",
+    type: "",
+  },
+
+  {
+    id: 51,
+    name: "Mallet finger splint",
+    description:
+      "Anodized aluminum + foam, Encloses the finger injuries and protect in 4 sides, Sorted size package, Protects and stabilizes fractures of the distal phalanx",
+    sizes: "XS- S- M- L- XL-XXL- 3XL",
+    code: "0073",
+    Coverimage: "MalletFinger",
+    images: [],
+    category: "others",
+    type: "",
+  },
+
+  {
+    id: 52,
+    name: "Finger Protector",
+    description:
+      "Anodized aluminum + foam, Encloses the finger injuries and protect in 4 sides, Sorted size package, Protects and stabilizes fractures of the distal phalanx",
+    sizes: "XS- S- M- L- XL-XXL- 3XL",
+    code: "0071",
+    Coverimage: "FingerProtector",
+    images: [],
+    category: "others",
+    type: "",
+  },
+
+  {
+    id: 53,
+    name: "Carved Finger Splint",
+    description:
+      "Anodized aluminum + foam, Encloses the finger injuries and protect in 4 sides, Sorted size package, Protects and stabilizes fractures of the distal phalanx",
+    sizes: "XS- S- M- L- XL-XXL- 3XL",
+    code: "0075",
+    Coverimage: "CarvedFinger",
+    images: [],
+    category: "others",
+    type: "",
+  },
+
+  {
+    id: 54,
+    name: "Gauze Rolls",
+    description: "100% Egyptiab Cotton, Washable",
+    sizes: "5 - 7- 10 - 15 cm",
+    code: "0080",
+    Coverimage: "GauzeRolls",
+    images: [],
+    category: "others",
+    type: "daily",
+  },
+];
+
+export default data;
