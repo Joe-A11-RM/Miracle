@@ -157,31 +157,106 @@ body {
 .categories p{
   font-size: 18px;
 }
- 
-.product-card{
-  width: 100%;
-  border: 1px solid var(--PrimaryColor);
-  border-radius: 8px;
-  cursor: pointer;
+
+.arrivals .swiper{
+  height: 300px;
 }
 
-.product-card img{
-  height: 250px;
-  border-bottom: 1px solid var(--PrimaryColor);
+
+
+.product-card{
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #1AA19A;
+
+}
+.product-card-image-layout{
+  height: 200px;
+  background-color: rgba(206, 206, 206, 0.311);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  padding: 8px;
+}
+.product-card img{
+  width: 80%;
+  border-radius: 8px;
+  height: 100%; 
 }
 
 .product-card-description{
   padding: 8px;
 }
-
+.product-card .description h6:hover , .product-card .description .category:hover{
+  color: #1AA19A !important;
+  transition: all 0.2s ease-in ;
+}
 .product-card-description p{
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 0;
 }
 
-.slick-slide {
-  width: 300px !important;
- }
+.product-card .description{
+  text-align: left;
+  padding: 8px;
+  text-wrap: wrap;
+  text-transform: capitalize;
+}
+
+.know-about-us{
+  background-image: url(../public/assets/Running.png);
+  background-repeat: no-repeat;
+  height: 350px;
+  position: relative;
+}
+
+.know-about-us p{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 40px;
+  width: 500px;
+}
+
+.know-about-us p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.2s ease-in ;
+}
+
+.footer{
+  background-color: #105A56;
+  color: white;
+  padding-block: 10px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+ 
+}
+
+.footer-content-title{
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.footer-content-element{
+  margin-left: 6px;
+  width: fit-content;
+  color: #D5D5D5;
+  font-size: 14px;
+}
+
+.footer-content-element:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.copyright{
+  font-size: 12px;
+  color: #D5D5D5;
+  text-transform: capitalize;
+
+}

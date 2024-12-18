@@ -12,10 +12,10 @@ import {
 } from "swiper/modules";
 import data from "../../../data";
 
-export default function Arrivals() {
+export default function DailySupport() {
   return (
     <div className="arrivals text-center">
-      <h3>Fresh Arrivals</h3>
+      <h3>Your Daily Support</h3>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         slidesPerView={4}
@@ -32,7 +32,7 @@ export default function Arrivals() {
         onSlideChange={() => console.log("slide change")}
       >
         {data
-          .filter((item) => item.type === "fresh")
+          .filter((item) => item.type === "daily")
           .map((item) => (
             <SwiperSlide key={item.id}>
               <div className="slide-content">
