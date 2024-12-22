@@ -151,7 +151,7 @@ let data = [
     code: "0033",
     Coverimage: "Anklebrace",
     images: [],
-    category: "ankle",
+    category: "foot&ankle",
     type: "daily",
   },
   {
@@ -163,7 +163,7 @@ let data = [
     code: "0033 (B)",
     Coverimage: "Anklesupport",
     images: [],
-    category: "ankle",
+    category: "foot&ankle",
     type: "",
   },
   {
@@ -175,7 +175,7 @@ let data = [
     code: "0031",
     Coverimage: "OpenAnklesupport",
     images: [],
-    category: "ankle",
+    category: "foot&ankle",
     type: "",
   },
   {
@@ -187,7 +187,7 @@ let data = [
     code: "0030",
     Coverimage: "OpenAnklesupport",
     images: [],
-    category: "ankle",
+    category: "foot&ankle",
     type: "",
   },
   {
@@ -199,7 +199,7 @@ let data = [
     code: "0035",
     Coverimage: "AnkleWrap",
     images: [],
-    category: "ankle",
+    category: "foot&ankle",
     type: "",
   },
   {
@@ -211,7 +211,7 @@ let data = [
     code: "0030",
     Coverimage: "ElasticAnkle",
     images: [],
-    category: "ankle",
+    category: "foot&ankle",
     type: "",
   },
 
@@ -259,7 +259,7 @@ let data = [
     code: "0034",
     Coverimage: "LongStockings",
     images: [],
-    category: "stocking",
+    category: "others",
     type: "",
   },
   {
@@ -270,7 +270,7 @@ let data = [
     code: "0034(B)",
     Coverimage: "ShortStockings",
     images: [],
-    category: "stocking",
+    category: "others",
     type: "",
   },
 
@@ -422,7 +422,7 @@ let data = [
     code: "0045",
     Coverimage: "HerniaBelts",
     images: [],
-    category: "herniabelts",
+    category: "others",
     type: "fresh",
   },
 
@@ -435,7 +435,7 @@ let data = [
     code: "0050",
     Coverimage: "HerniaBeltsSingle",
     images: [],
-    category: "herniabelts",
+    category: "others",
     type: "",
   },
 
@@ -448,7 +448,7 @@ let data = [
     code: "0050",
     Coverimage: "UmbilicalBelts",
     images: [],
-    category: "herniabelts",
+    category: "others",
     type: "fresh",
   },
 
@@ -461,7 +461,7 @@ let data = [
     code: "0052",
     Coverimage: "UmbilicalBelts",
     images: [],
-    category: "children",
+    category: "others",
     type: "",
   },
 
@@ -474,7 +474,7 @@ let data = [
     code: "0085",
     Coverimage: "MeroCooling",
     images: [],
-    category: "children",
+    category: "others",
     type: "",
   },
 
@@ -487,7 +487,7 @@ let data = [
     code: "0051",
     Coverimage: "Frejka",
     images: [],
-    category: "children",
+    category: "others",
     type: "daily",
   },
 
@@ -640,7 +640,7 @@ let data = [
     code: "0073",
     Coverimage: "MalletFinger",
     images: [],
-    category: "others",
+    category: "fingers",
     type: "",
   },
 
@@ -653,7 +653,7 @@ let data = [
     code: "0071",
     Coverimage: "FingerProtector",
     images: [],
-    category: "others",
+    category: "fingers",
     type: "",
   },
 
@@ -666,7 +666,7 @@ let data = [
     code: "0075",
     Coverimage: "CarvedFinger",
     images: [],
-    category: "others",
+    category: "fingers",
     type: "",
   },
 

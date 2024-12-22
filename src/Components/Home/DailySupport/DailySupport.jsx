@@ -11,6 +11,7 @@ import {
   Scrollbar,
 } from "swiper/modules";
 import data from "../../../data";
+import { Link } from "react-router-dom";
 
 export default function DailySupport() {
   return (
@@ -28,6 +29,20 @@ export default function DailySupport() {
           delay: 2500,
           disableOnInteraction: false,
         }}
+        breakpoints={{
+          1399: {
+            slidesPerView: 5,
+          },
+          1199: {
+            slidesPerView: 4,
+          },
+          991: {
+            slidesPerView: 3,
+          },
+          576: {
+            slidesPerView: 3,
+          },
+        }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
@@ -38,13 +53,18 @@ export default function DailySupport() {
               <div className="slide-content">
                 <div className="product-card">
                   <div className="product-card-image-layout">
-                    <img src="assets/Product.png" alt="img" />
+                    <img src="/assets/Product.png" alt="img" />
                   </div>
                   <div className="description">
                     <h6>{item.name}</h6>
                     <div className="d-flex">
                       <span className="fw-semibold me-1">Category: </span>
-                      <div className="category">{item.category}</div>
+                      <Link
+                        to={`/categories/${item.category}`}
+                        className="category"
+                      >
+                        {item.category}
+                      </Link>
                     </div>
                     <div>
                       <span className="fw-semibold">Sizes: </span> {item.sizes}
