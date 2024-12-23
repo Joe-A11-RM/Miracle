@@ -37,10 +37,10 @@ export default function Arrivals() {
             slidesPerView: 4,
           },
           991: {
-            slidesPerView: 3,
+            slidesPerView: 4,
           },
           576: {
-            slidesPerView: 2,
+            slidesPerView: 3,
           },
         }}
         onSwiper={(swiper) => console.log(swiper)}

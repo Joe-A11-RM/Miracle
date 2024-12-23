@@ -37,7 +37,7 @@ export default function DailySupport() {
             slidesPerView: 4,
           },
           991: {
-            slidesPerView: 3,
+            slidesPerView: 4,
           },
           576: {
             slidesPerView: 3,

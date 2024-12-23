@@ -154,20 +154,115 @@ a {
 }
 
 .categories,
-.arrivals {
+.arrivals,.about-us,.certifications,.research-development {
 	padding: 16px;
 	border-bottom: 1px solid var(--SecondaryColor);
 }
 
-.categories h3,
-.arrivals h3 {
+ h3{
 	text-align: center;
-	color: var(--PrimaryColor);
+	color: var(--PrimaryColor) !important;
 	font-weight: 500;
 	margin-bottom: 32px;
 }
+.about-us, .research-development{
+	border-bottom: 1px solid var(--SecondaryColor);
+}
+.about-us .about-us-content, .research-development-content{
+	text-align: justify;
+}
 
-.categories img {
+.mission-strategy{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 24px;
+}
+
+.our-mission-strategy{
+border-radius: 16px;
+padding: 16px;
+border: 1px solid var(--SecondaryColor);
+width: auto;
+height: 210px;
+
+}
+
+.our-mission-strategy img{
+	width: 80px;
+	margin-right: 24px;
+}
+
+.our-mission-strategy-title{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	font-weight: 600;
+	font-size: 24px;
+	color: var(--PrimaryColor);
+}
+
+.our-mission-strategy-content{
+	text-align: justify;
+	margin-top: 12px;
+}
+
+.certifications{
+	text-align: center;
+}
+
+.excellence-card{
+	width: 100%;
+	height: 400px;
+	border: 1px solid var(--SecondaryColor);
+	border-radius: 8px;
+}
+
+
+.excellence-card-img-layout {
+	position: relative;
+	overflow: hidden;
+  }
+
+.excellence-card-img-layout img {
+	height: 250px;
+}
+  
+  .excellence-card-img-layout-hover .hover-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0; 
+	transition: opacity 0.3s ease; 
+}
+.excellence-card-img-layout-hover:hover .hover-overlay {
+	opacity: 1;
+  }
+  
+  .hover-text {
+	color: #fff;
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: bold;
+  }
+  
+.excellence-card-img-layout img{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.excellence-card-content{
+	padding: 16px;
+	text-align: justify;
+	
+}
+.categories img  , .certifications img{
 	width: 120px;
 	margin-bottom: 10px;
 }
@@ -334,6 +429,16 @@ a {
 	.swiper-slide {
 		width: 250px !important;
 	}
+	.our-mission-strategy{
+		height: 230px !important; 
+		margin-top: 4px;
+	}
+	.certifications .col-sm-6{
+		width: 50% !important;
+	}
+	.excellence-card:nth-child(1){
+		margin-block:4px;
+	}
 }
 
 
@@ -350,6 +455,16 @@ a {
 	.pain img {
 		height: 250px;
 	}
+	.our-mission-strategy{
+		height: 230px !important; 
+		margin-top: 4px;
+	}
+	.excellence-card:nth-child(1){
+		margin-block:4px;
+	}
+	.col-lg-4:nth-child(3) .excellence-card {
+		transform: translate(0%) !important;
+	  }
 }
 
 @media (max-width: 991.98px) {
@@ -365,11 +480,25 @@ a {
 	.pain img {
 		height: 250px;
 	}
+	.our-mission-strategy{
+		margin-top: 4px;
+	}
+	
+	.excellence-card:nth-child(1){
+		margin-block:4px;
+	}
+	.col-lg-4:nth-child(3) .excellence-card {
+		transform: translate(50%);
+	  }
 }
 
 @media (max-width: 1199.98px) {
 
+	.our-mission-strategy{
+		height: 230px !important; 
+	}	
 }
 
 @media (max-width: 1399.98px) {
+
 }
