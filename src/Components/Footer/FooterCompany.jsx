@@ -20,9 +20,27 @@ export default function FooterCompany() {
           start-up, crafting products from pure Egyptian cotton.
         </div>
         <div className="footer-social-media">
-          <FontAwesomeIcon icon={faFacebook} />
-          <FontAwesomeIcon icon={faWhatsapp} />
-          <FontAwesomeIcon icon={faInstagram} />
+          <a
+            href="https://www.facebook.com/miracleorthopedic"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a
+            href="https://wa.me/201000219064"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} />
+          </a>
+          <a
+            href="https://www.instagram.com/miracle.medical.industries/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
         </div>
       </div>
     </div>

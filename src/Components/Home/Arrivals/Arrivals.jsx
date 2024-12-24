@@ -56,7 +56,9 @@ export default function Arrivals() {
                     <img src="/assets/Product.png" alt="img" />
                   </div>
                   <div className="description">
-                    <h6>{item.name}</h6>
+                    <Link to={`/products/${item.id}`}>
+                      <h6>{item.name}</h6>
+                    </Link>
                     <div className="d-flex">
                       <span className="fw-semibold me-1">Category: </span>
                       <Link

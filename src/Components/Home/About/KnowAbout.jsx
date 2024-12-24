@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function KnowAbout() {
   return (
-    <div className="know-about-us">
-      <p>Know more about our company.</p>
-    </div>
+    <Link to="/aboutus">
+      <div className="know-about-us">
+        <p>Know more about our company.</p>
+      </div>
+    </Link>
   );
 }

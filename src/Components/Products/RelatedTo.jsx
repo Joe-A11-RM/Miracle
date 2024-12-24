@@ -1,8 +1,5 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
+import { Link } from "react-router-dom";
 import {
   A11y,
   Autoplay,
@@ -10,13 +7,13 @@ import {
   Pagination,
   Scrollbar,
 } from "swiper/modules";
-import data from "../../../data";
-import { Link } from "react-router-dom";
+import data from "../../data";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function DailySupport() {
+export default function RelatedTo({ product }) {
   return (
     <div className="arrivals text-center">
-      <h3>Your Daily Support</h3>
+      <h3>Related To</h3>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         slidesPerView={4}
@@ -47,7 +44,7 @@ export default function DailySupport() {
         onSlideChange={() => console.log("slide change")}
       >
         {data
-          .filter((item) => item.type === "daily")
+          .filter((item) => item.category === product.category)
           .map((item) => (
             <SwiperSlide key={item.id}>
               <div className="slide-content">
@@ -56,9 +53,7 @@ export default function DailySupport() {
                     <img src="/assets/Product.png" alt="img" />
                   </div>
                   <div className="description">
-                    <Link to={`/products/${item.id}`}>
-                      <h6>{item.name}</h6>
-                    </Link>
+                    <h6>{item.name}</h6>
                     <div className="d-flex">
                       <span className="fw-semibold me-1">Category: </span>
                       <Link
