@@ -14,7 +14,7 @@ export default function Pain() {
           <div className="col-lg-6 position-relative">
             <div className="image-container">
               <img
-                src="/assets/Skeleton.jpg"
+                src="/assets/Human.png"
                 alt="skeleton"
                 className="img-fluid"
               />
@@ -28,35 +28,35 @@ export default function Pain() {
               <Link
                 to="/categories/shoulder"
                 className="circle text-white"
-                style={{ top: "23%", left: "49%" }}
+                style={{ top: "30%", left: "45%" }}
               >
                 <div className="part">shoulder</div>
               </Link>
               <Link
                 to="/categories/neck"
                 className="circle text-white"
-                style={{ top: "23%", left: "53%" }}
+                style={{ top: "33%", left: "50%" }}
               >
                 <div className="part">neck</div>
               </Link>
               <Link
                 to="/categories/wrist"
                 className="circle text-white"
-                style={{ top: "48%", left: "60%" }}
+                style={{ top: "40%", left: "55%" }}
               >
                 <div className="part text-white">wrist</div>
               </Link>
               <Link
                 to="/categories/fingers"
                 className="circle text-white"
-                style={{ top: "45%", left: "32%" }}
+                style={{ top: "18%", left: "32%" }}
               >
                 <div className="part">fingers</div>
               </Link>
               <Link
                 to="/categories/back"
                 className="circle text-white"
-                style={{ top: "40%", left: "40%" }}
+                style={{ top: "40%", left: "42%" }}
               >
                 <div className="part">back</div>
               </Link>
@@ -84,21 +84,21 @@ export default function Pain() {
               <Link
                 to="/categories/thigh&shin"
                 className="circle text-white"
-                style={{ top: "65%", left: "35%" }}
+                style={{ top: "60%", left: "33%" }}
               >
                 <div className="part">thigh</div>
               </Link>
               <Link
                 to="/categories/knee"
                 className="circle text-white"
-                style={{ top: "65%", left: "53%" }}
+                style={{ top: "56%", left: "49%" }}
               >
                 <div className="part">knee</div>
               </Link>
               <Link
                 to="/categories/foot&ankle"
                 className="circle text-white"
-                style={{ top: "80%", left: "50%" }}
+                style={{ top: "70%", left: "43%" }}
               >
                 <div className="part">ankle & foot</div>
               </Link>

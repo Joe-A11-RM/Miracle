@@ -4,7 +4,7 @@ import CategoryItem from "./CategoryItem";
 export default function Categories() {
   return (
     <div className="categories">
-      <h3>Our Categories</h3>
+      <h3>Our Products</h3>
       <div className="container text-center">
         <div className="row">
           <CategoryItem title="abdominal" img="Abdominal.svg" />
