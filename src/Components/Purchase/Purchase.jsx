@@ -3,7 +3,7 @@ import React from "react";
 export default function Purchase() {
   return (
     <div>
-      <div className="know-about-us"></div>
+      <div className="purchase-banner"></div>
       <div className="Contact-us text-center">
         <h3>How you can get our product.</h3>
         <div className="container">

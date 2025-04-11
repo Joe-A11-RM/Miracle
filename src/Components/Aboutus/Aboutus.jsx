@@ -4,7 +4,9 @@ import CategoryItem from "../Home/Categories/CategoryItem";
 export default function Aboutus() {
   return (
     <div>
-      <div className="know-about-us"></div>
+      <div className="about-us-layout">
+        <div className="know-about-us-2"></div>
+      </div>
       <div className="about-us text-center">
         <h3>About Us</h3>
         <div className="container">

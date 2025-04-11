@@ -519,11 +519,66 @@ h3 {
 	margin-right: 4px;
 }
 
-.know-about-us {
-	background-image: url(../public//assets/Running.png);
+.know-about-us, .know-about-us-2 {
+	background-image: url(../public/assets/about2.jpg);
 	background-repeat: no-repeat;
-	height: 350px;
+	background-size: cover;
 	position: relative;
+	height: 400px;
+}
+.OEM-banner{
+	background-image: url(../public/assets/Cotton2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 400px;
+}
+
+.export-to-banner{
+	background-image: url(../public/assets/airplane.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 400px;
+}
+.research-development-banner{
+	background-image: url(../public/assets/RD.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 400px;
+}
+.contact-us-banner{
+	background-image: url(../public/assets/Contact-Us-3.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	height: 400px;
+}
+.purchase-banner{
+	background-image: url(../public/assets/payment.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center ;
+	position: relative;
+	height: 400px;
+}
+.know-about-us::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+	z-index: 1;
+}
+
+.know-about-us > *,
+.OEM-banner > *,.export-to-banner > * {
+	position: relative;
+	z-index: 2;
 }
 
 .know-about-us p {

@@ -3,7 +3,7 @@ import React from "react";
 export default function ResearchDevelopment() {
   return (
     <div>
-      <div className="know-about-us"></div>
+      <div className="research-development-banner"></div>
       <div className="research-development text-center">
         <h3>Research and Development</h3>
         <div className="container">
