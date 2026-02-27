@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   A11y,
   Autoplay,
@@ -9,8 +9,12 @@ import {
 } from "swiper/modules";
 import data from "../../data";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Card } from "antd";
+const { Meta } = Card;
 
 export default function RelatedTo({ product }) {
+  const navigate = useNavigate();
+
   return (
     <div className="arrivals text-center">
       <h3>Related To</h3>
@@ -48,26 +52,45 @@ export default function RelatedTo({ product }) {
           .map((item) => (
             <SwiperSlide key={item.id}>
               <div className="slide-content">
-                <div className="product-card">
-                  <div className="product-card-image-layout">
-                    <img src="/assets/Product.png" alt="img" />
-                  </div>
-                  <div className="description">
-                    <h6>{item.name}</h6>
-                    <div className="d-flex">
-                      <span className="fw-semibold me-1">Category: </span>
-                      <Link
-                        to={`/categories/${item.category}`}
-                        className="category"
-                      >
-                        {item.category}
-                      </Link>
+                <Card
+                  onClick={() => navigate(`/products/${item.id}`)}
+                  hoverable
+                  style={{ width: "100%", borderRadius: "16px" }}
+                  cover={
+                    <div
+                      style={{
+                        height: "240px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        background: "#f5f5f5",
+                        borderTopLeftRadius: "10px",
+                        borderTopRightRadius: "10px",
+                        overflow: "hidden",
+                      }}
+                    >
+                      <img
+                        draggable={false}
+                        alt={item.name}
+                        style={{
+                          maxHeight: "100%",
+                          maxWidth: "100%",
+                          objectFit: "contain",
+                        }}
+                        src={`../assets/Products${item.Coverimage}`}
+                      />
                     </div>
-                    <div>
-                      <span className="fw-semibold">Sizes: </span> {item.sizes}
-                    </div>
-                  </div>
-                </div>
+                  }
+                >
+                  <Meta
+                    title={item.name}
+                    description={
+                      <span style={{ fontSize: "14px", color: "#555" }}>
+                        {item.sizes}
+                      </span>
+                    }
+                  />
+                </Card>
               </div>
             </SwiperSlide>
           ))}

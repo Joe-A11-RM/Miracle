@@ -28,10 +28,10 @@ export default function FooterLinks() {
             </Link>
           </div>
           <div className="col-lg-4 col-md-3 col-sm-4">
-            <div className="footer-content-title">Products</div>
+            <div className="footer-content-title">Categories</div>
             <div className="row">
               <div className="col-6">
-                <Link to="/categories/abdominal">
+                <Link to="/categories/belts-abdominal">
                   <div className="footer-content-element">Abdominal</div>
                 </Link>
                 <Link to="/categories/back">
@@ -49,7 +49,7 @@ export default function FooterLinks() {
                 <Link to="/categories/fingers">
                   <div className="footer-content-element">Fingers</div>
                 </Link>
-                <Link to="/categories/foot&ankle">
+                <Link to="/categories/ankle">
                   <div className="footer-content-element">Foot&Ankle</div>
                 </Link>
               </div>
@@ -63,7 +63,7 @@ export default function FooterLinks() {
                 <Link to="/categories/shoulder">
                   <div className="footer-content-element">Shoulder</div>
                 </Link>
-                <Link to="/categories/thigh&shin">
+                <Link to="/categories/thigh-shin">
                   <div className="footer-content-element">Thigh</div>
                 </Link>
                 <Link to="/categories/wrist">

@@ -11,7 +11,10 @@ export default function CategoryItem({ title, img }) {
         className="category-img"
         src={`/assets/${img}`}
         alt={title}
-        style={{ borderRadius: "100px" }}
+        style={{
+          borderRadius: "100px",
+          border: "1px solid #1AA19A",
+        }}
       />
       <p className="text-capitalize">{title}</p>
     </Link>
