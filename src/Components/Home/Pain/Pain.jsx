@@ -7,14 +7,14 @@ export default function Pain() {
       <div className="container">
         <div className="row">
           <div className="my-auto content col-lg-6">
-            <h3 className="text-start">Do You Feel Pain</h3>
+            <h2 className="text-start">Do You Feel Pain</h2>
             <div>Miracle is your best choice</div>
             <div>What are you waiting for? Get your first item now.</div>
           </div>
           <div className="col-lg-6 position-relative">
             <div className="image-container">
               <img
-                src="/assets/Human.png"
+                src="/assets/Human.webp"
                 alt="skeleton"
                 className="img-fluid"
               />
@@ -61,7 +61,7 @@ export default function Pain() {
                 <div className="part">back</div>
               </Link>
               <Link
-                to="/categories/abdominal"
+                to="/categories/belts-abdominal"
                 className="circle text-white"
                 style={{ top: "45%", left: "45%" }}
               >
@@ -82,7 +82,7 @@ export default function Pain() {
                 <div className="part">calf</div>
               </Link>**/}
               <Link
-                to="/categories/thigh&shin"
+                to="/categories/thigh-shin"
                 className="circle text-white"
                 style={{ top: "60%", left: "33%" }}
               >
@@ -96,7 +96,7 @@ export default function Pain() {
                 <div className="part">knee</div>
               </Link>
               <Link
-                to="/categories/foot&ankle"
+                to="/categories/ankle"
                 className="circle text-white"
                 style={{ top: "70%", left: "43%" }}
               >

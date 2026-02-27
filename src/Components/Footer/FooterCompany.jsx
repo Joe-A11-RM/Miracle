@@ -1,9 +1,8 @@
 import {
-  faFacebook,
-  faInstagram,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  FacebookOutlined,
+  InstagramOutlined,
+  WhatsAppOutlined,
+} from "@ant-design/icons";
 import React from "react";
 
 export default function FooterCompany() {
@@ -25,21 +24,21 @@ export default function FooterCompany() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faFacebook} />
+            <FacebookOutlined />
           </a>
           <a
             href="https://wa.me/201000219064"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faWhatsapp} />
+            <WhatsAppOutlined />
           </a>
           <a
             href="https://www.instagram.com/miracle.medical.industries/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faInstagram} />
+            <InstagramOutlined />
           </a>
         </div>
       </div>

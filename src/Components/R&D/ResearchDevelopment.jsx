@@ -1,8 +1,20 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 export default function ResearchDevelopment() {
   return (
     <div>
+      <Helmet>
+        <title>Miracle Medical - Research and Development</title>
+        <meta
+          name="description"
+          content="Discover Miracle Medical Industries' commitment to innovation through our dedicated Research and Development program. Learn how we enhance medical products with cutting-edge technology and expert collaboration."
+        />
+        <meta
+          name="keywords"
+          content="Research and Development, Medical Innovation, Miracle Medical Industries, Product Enhancement, Medical Technology, Orthopedic Research, Healthcare Solutions"
+        />
+      </Helmet>
       <div className="research-development-banner"></div>
       <div className="research-development text-center">
         <h3>Research and Development</h3>
