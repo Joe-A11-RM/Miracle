@@ -11,9 +11,12 @@ import {
   Scrollbar,
 } from "swiper/modules";
 import data from "../../../data";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Card } from "antd";
+const { Meta } = Card;
 
 export default function DailySupport() {
+  const navigate = useNavigate();
   return (
     <div className="arrivals text-center">
       <h3>Your Daily Support</h3>
@@ -28,6 +31,7 @@ export default function DailySupport() {
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
+          pauseOnMouseEnter: true, // ✅ THIS LINE
         }}
         breakpoints={{
           1399: {
@@ -51,29 +55,39 @@ export default function DailySupport() {
           .map((item) => (
             <SwiperSlide key={item.id}>
               <div className="slide-content">
-                <div className="product-card">
-                  <div className="product-card-image-layout">
-                    <img src="/assets/Product.png" alt="img" />
-                  </div>
-                  <div className="description">
-                    <Link to={`/products/${item.id}`}>
-                      <h6>{item.name}</h6>
-                    </Link>
-                    <div className="d-flex">
-                      <span className="fw-semibold me-1">Category: </span>
-                      <Link
-                        to={`/categories/${item.category}`}
-                        className="category"
-                      >
-                        {item.category}
-                      </Link>
+                <Card
+                  onClick={() => navigate(`/products/${item.id}`)}
+                  hoverable
+                  style={{ width: 240, height: "auto" }}
+                  cover={
+                    <div
+                      style={{
+                        height: "240px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        background: "#f5f5f5",
+                        borderTopLeftRadius: "10px",
+                        borderTopRightRadius: "10px",
+                        overflow: "hidden",
+                      }}
+                    >
+                      <img
+                        draggable={false}
+                        alt={item.name}
+                        style={{
+                          maxHeight: "100%",
+                          maxWidth: "100%",
+                          objectFit: "contain",
+                        }}
+                        src={`../assets/Products${item.Coverimage}`}
+                      />
                     </div>
-                    <div>
-                      <span className="fw-semibold">Sizes: </span> {item.sizes}
-                    </div>
-                  </div>
-                </div>
-              </div>
+                  }
+                >
+                  <Meta title={item.name} description={item.sizes} />
+                </Card>
+              </div>{" "}
             </SwiperSlide>
           ))}
       </Swiper>

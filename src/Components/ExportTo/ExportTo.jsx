@@ -1,14 +1,26 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 export default function ExportTo() {
   return (
     <div>
+      <Helmet>
+        <title>Miracle Medical - Export To</title>
+        <meta
+          name="description"
+          content="Discover the global reach of Miracle Medical Industries. We proudly export our trusted medical support solutions to 14 countries worldwide, enhancing healthcare with our high-quality orthopedic and medical products."
+        />
+        <meta
+          name="keywords"
+          content="Miracle Medical Industries, Export, Global Medical Products, Orthopedic Products, Medical Support Solutions, International Healthcare, Medical Device Export, Miracle Medical Export Countries"
+        />
+      </Helmet>
       <div className="export-to-banner"></div>
       <div className="export-to text-center">
         <h3>We Export To</h3>
         <div className="container">
-          <div>
-            Providing Trusted Medical Support Solutions, Exported to 14
+          <div style={{ fontSize: "clamp(14px, 2.5vw, 18px)" }}>
+            Providing Trusted Medical Support Solutions, Exported to 55
             Countries Across the Globe.
           </div>
         </div>

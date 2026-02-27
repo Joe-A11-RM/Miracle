@@ -10,7 +10,7 @@ export default function Footer() {
           <FooterCompany />
           <FooterLinks />
         </div>
-        <div className="copyright">
+        <div className="copyright text-center">
           copyrights@2025 miracle - all rights reserved.
         </div>
       </div>
